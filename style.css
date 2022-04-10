@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+#display {
+  background: -moz-radial-gradient(
+    circle at 50% 42%,
+    rgba(129, 0, 212, 0.65) 0%,
+    rgb(255, 255, 255) 25%
+  );
+  background: -webkit-radial-gradient(
+    circle at 50% 42%,
+    rgba(129, 0, 212, 0.65) 0%,
+    rgb(255, 255, 255) 25%
+  );
+  background: -o-radial-gradient(
+    circle at 50% 42%,
+    rgba(129, 0, 212, 0.65) 0%,
+    rgb(255, 255, 255) 25%
+  );
+  background: -ms-radial-gradient(
+    circle at 50% 42%,
+    rgba(129, 0, 212, 0.65) 0%,
+    rgb(255, 255, 255) 25%
+  );
+  background: radial-gradient(
+    circle at 50% 42%,
+    rgba(129, 0, 212, 0.65) 0%,
+    rgb(255, 255, 255) 25%
+  );
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 2fr 1fr;
+  -webkit-box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+#panel {
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 40px 20px 20px 20px;
+  font-size: 20px;
+}
+
+#title {
+  grid-row-start: 2;
+  width: 150px;
+  margin: auto;
+  color: rgb(47, 5, 87);
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+#intro {
+    text-align: justify;
+}
+
+#motto {
+    grid-row-start: 4;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    color: blueviolet;
+}
+
+#input {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+body {
+  width: 600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 6fr;
+  background-color: rgb(247, 247, 247);
+}
+
+button, input {
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input {
+    width: 50px;
+}
+
+button {
+    border: 0px;
+    background-color: rgb(48, 68, 136);
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+}
