@@ -41,6 +41,14 @@ html {
   box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.3);
 }
 
+#chart-container {
+  height: 200px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr;
+}
+
 #panel {
   background-color: white;
   -webkit-box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.3);
@@ -60,23 +68,23 @@ html {
 }
 
 #intro {
-    text-align: justify;
+  text-align: justify;
 }
 
 #motto {
-    grid-row-start: 4;
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    font-size: 16px;
-    color: blueviolet;
+  grid-row-start: 4;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  color: blueviolet;
 }
 
 #input {
-    width: 300px;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
 }
 
 body {
@@ -88,26 +96,44 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
-button, input {
-    font-family: inherit;
-    padding: 10px;
-    border-radius: 5px;
+button,
+input {
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 input {
-    width: 50px;
+  width: 50px;
 }
 
 button {
-    border: 0px;
-    background-color: rgb(48, 68, 136);
-    color: white;
-    cursor: pointer;
+  border: 0px;
+  background-color: rgb(48, 68, 136);
+  color: white;
+  cursor: pointer;
 }
 
+.red-text {
+  color: red;
+  display: inline;
+  font-weight: bold;
+}
+
+.green-text {
+  color: green;
+  display: inline;
+  font-weight: bold;
+}
+
+.purple-text {
+  color: rgba(129, 0, 212);
+  display: inline;
+  font-weight: bold;
+}
 
 @media (max-width: 700px) {
-    body {
-        width: 100%;
-    }
+  body {
+    width: 100%;
+  }
 }

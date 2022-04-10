@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
@@ -14,18 +15,19 @@
     <title>Jinsei</title>
   </head>
   <body>
-    <div id="display">
-      <div id="title">Jinsei</div>
-      <div id="motto">Gain control of your weight</div>
+    <div id="chart-container">
+      <canvas id="chart" width="600px" height="200px"></canvas>
     </div>
     <div id="panel">
+      <div id="title">Jinsei</div>
       <div id="intro">
-        With Jinsei you'll be able to <b>face yourself</b> to start achieving you goals! <b>Enter your current weight</b> in the input below to start tracking your goals.
+        Hello again! Your last weight was: <b>79.2kg</b>. You weight <p class="red-text">1.2kg more</p> than <b>5 days ago</b>. At this rate your weight in 20 days would be: <p class="purple-text">81.7kg</p>.
       </div>
       <div id="input">
         <input type="text" name="weight" id="weight-input" placeholder="Kg">
         <button id="weight-submit">Submit</button>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
