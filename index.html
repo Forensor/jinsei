@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
@@ -20,12 +21,15 @@
     </div>
     <div id="panel">
       <div id="intro">
-        With Jinsei you'll be able to <b>face yourself</b> to start achieving you goals! <b>Enter your current weight</b> in the input below to start tracking your goals.
+        With Jinsei you'll be able to <b>face yourself</b> to start achieving
+        you goals! <b>Enter your current weight</b> in the input below to start
+        tracking your goals.
       </div>
       <div id="input">
-        <input type="text" name="weight" id="weight-input" placeholder="Kg">
-        <button id="weight-submit">Submit</button>
+        <input type="text" name="weight" id="weight-input" placeholder="e.g. '80.0' kg" />
+        <button id="weight-submit" onclick="insertDayWeight()">Submit</button>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -104,7 +104,7 @@ input {
 }
 
 input {
-  width: 50px;
+  width: 100px;
 }
 
 button {
@@ -134,6 +134,9 @@ button {
 
 @media (max-width: 700px) {
   body {
+    width: 100%;
+  }
+  #chart-container {
     width: 100%;
   }
 }
